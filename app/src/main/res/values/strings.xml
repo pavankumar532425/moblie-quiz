@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">MobiQuiz</string>
+    <string-array name="aptdiff">
+
+        <item>Aptitude....</item>
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+        <item>Advanced</item>
+
+    </string-array>
+
+    <string-array name="javadiff">
+
+        <item>Java....</item>
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+        <item>Advanced</item>
+
+    </string-array>
+
+    <string-array name="cdiff">
+
+        <item>C/C++....</item>
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+        <item>Advanced</item>
+
+    </string-array>
+
+    <string-array name="engdiff">
+
+        <item>English....</item>
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+        <item>Advanced</item>
+
+    </string-array>
+
+    <string-array name="histdiff">
+
+        <item>History....</item>
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+        <item>Advanced</item>
+
+    </string-array>
+
+    <string-array name="gendiff">
+
+        <item>General Awareness....</item>
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+        <item>Advanced</item>
+
+    </string-array>
+
+    <string-array name="pytdiff">
+
+        <item>Python....</item>
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+        <item>Advanced</item>
+
+    </string-array>
+
+    <string-array name="reasdiff">
+
+        <item>Reasoning....</item>
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+        <item>Advanced</item>
+
+    </string-array>
+
+</resources>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mark1.mobiquiz.harsha.com.mobiquiz.QuizPage"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/quizlabelview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        app:srcCompat="@android:color/transparent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:paddingRight="1dp">
+
+            <Spinner
+                android:id="@+id/spinnerx"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/backy8"
+                android:dropDownWidth="match_parent"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:padding="10dp"
+                android:spinnerMode="dialog"
+                android:textAlignment="center"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/backy6"
+                android:onClick="onQuesNav"
+                app:srcCompat="@android:drawable/arrow_down_float" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/timerview"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/backy8"
+            android:gravity="center"
+            android:text="Timer : 00"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/questionsv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="3dp"
+        android:background="@android:color/white"
+        android:minHeight="120dp">
+
+        <LinearLayout
+            android:id="@+id/questionll"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="?android:attr/colorBackground"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/questiontv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/backy7"
+                android:padding="10dp"
+                android:textColor="?android:attr/textColorTertiaryInverse"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RadioGroup
+        android:id="@+id/optionsgroup"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@drawable/backy7"
+        android:baselineAligned="false">
+
+        <RadioButton
+            android:id="@+id/option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:button="@android:drawable/btn_radio"
+            android:textColor="@android:color/white" />
+
+        <RadioButton
+            android:id="@+id/option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:button="@android:drawable/btn_radio"
+            android:textColor="@android:color/white" />
+
+        <RadioButton
+            android:id="@+id/option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@android:drawable/btn_radio"
+            android:textColor="@android:color/white" />
+
+        <RadioButton
+            android:id="@+id/option4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:button="@android:drawable/btn_radio"
+            android:textColor="@android:color/white" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backy7"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/prevbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@color/common_google_signin_btn_text_light_disabled"
+            android:onClick="gotoPrev"
+            app:srcCompat="@android:drawable/ic_media_previous" />
+
+        <Button
+            android:id="@+id/endbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@color/common_google_signin_btn_text_light_disabled"
+            android:onClick="onfbexi"
+            android:text="End Quiz"
+            android:textColor="@android:color/white" />
+
+        <ImageButton
+            android:id="@+id/nextbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@color/common_google_signin_btn_text_light_disabled"
+            android:onClick="gotoNext"
+            app:srcCompat="@android:drawable/ic_media_next" />
+    </LinearLayout>
+
+</android.support.v7.widget.LinearLayoutCompat>

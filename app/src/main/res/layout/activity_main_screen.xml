@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="mark1.mobiquiz.harsha.com.mobiquiz.MainScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backy8"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="606dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_google_signin_btn_text_dark_disabled"
+            android:orientation="vertical"
+            android:paddingBottom="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/backy5"
+                android:elevation="10dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/dispic"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:adjustViewBounds="false"
+                    android:background="@android:color/transparent"
+                    android:onClick="onDPclick"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/appnamedis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/faster_one"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="@string/app_name"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/aptimgv"
+                            android:layout_width="150dp"
+                            android:layout_height="70dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/aptitude" />
+
+                        <Spinner
+                            android:id="@+id/spinner1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:dropDownWidth="match_parent"
+                            android:entries="@array/aptdiff"
+                            android:gravity="center"
+                            android:spinnerMode="dialog"
+                            android:tag="Aptitude"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/aptpro"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:progress="0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/cppimgv"
+                            android:layout_width="150dp"
+                            android:layout_height="70dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/clang" />
+
+                        <Spinner
+                            android:id="@+id/spinner2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:dropDownWidth="match_parent"
+                            android:entries="@array/cdiff"
+                            android:gravity="center"
+                            android:spinnerMode="dialog"
+                            android:tag="Aptitude"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/cpppro"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:progress="0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/genawimgv"
+                            android:layout_width="150dp"
+                            android:layout_height="70dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/genknow" />
+
+                        <Spinner
+                            android:id="@+id/spinner3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:dropDownWidth="match_parent"
+                            android:entries="@array/gendiff"
+                            android:gravity="center"
+                            android:spinnerMode="dialog"
+                            android:tag="Aptitude"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/genpro"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:progress="0" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/javaimgv"
+                            android:layout_width="150dp"
+                            android:layout_height="70dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/java" />
+
+                        <Spinner
+                            android:id="@+id/spinner4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:dropDownWidth="match_parent"
+                            android:entries="@array/javadiff"
+                            android:gravity="center"
+                            android:spinnerMode="dialog"
+                            android:tag="Aptitude"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/javapro"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:progress="0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/pytimgv"
+                            android:layout_width="150dp"
+                            android:layout_height="70dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/python" />
+
+                        <Spinner
+                            android:id="@+id/spinner5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:dropDownWidth="match_parent"
+                            android:entries="@array/pytdiff"
+                            android:gravity="center"
+                            android:spinnerMode="dialog"
+                            android:tag="Aptitude"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/pytpro"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:progress="0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/engimgv"
+                            android:layout_width="150dp"
+                            android:layout_height="70dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/english" />
+
+                        <Spinner
+                            android:id="@+id/spinner6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:dropDownWidth="match_parent"
+                            android:entries="@array/engdiff"
+                            android:gravity="center"
+                            android:spinnerMode="dialog"
+                            android:tag="Aptitude"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/engpro"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:progress="0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/resimgv"
+                            android:layout_width="150dp"
+                            android:layout_height="70dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/reasoning" />
+
+                        <Spinner
+                            android:id="@+id/spinner7"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:dropDownWidth="match_parent"
+                            android:entries="@array/reasdiff"
+                            android:gravity="center"
+                            android:spinnerMode="dialog"
+                            android:tag="Aptitude"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/respro"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:progress="0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/histimgv"
+                            android:layout_width="150dp"
+                            android:layout_height="70dp"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/history" />
+
+                        <Spinner
+                            android:id="@+id/spinner8"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:dropDownWidth="match_parent"
+                            android:entries="@array/histdiff"
+                            android:gravity="center"
+                            android:spinnerMode="dialog"
+                            android:tag="Aptitude"
+                            android:textAlignment="center" />
+
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/histpro"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:progress="0" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

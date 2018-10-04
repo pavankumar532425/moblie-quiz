@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "210338696045",
+    "firebase_url": "https://mobiquiz-12772.firebaseio.com",
+    "project_id": "mobiquiz-12772",
+    "storage_bucket": "mobiquiz-12772.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:210338696045:android:e4428dbf58e29e44",
+        "android_client_info": {
+          "package_name": "mark1.mobiquiz.harsha.com.mobiquiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "210338696045-6gnv0pehi7nm3kkalrl7j880f8t7smlc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mark1.mobiquiz.harsha.com.mobiquiz",
+            "certificate_hash": "abfb0fb9e2d73dfd7c764d138bec86cc8fb25c56"
+          }
+        },
+        {
+          "client_id": "210338696045-frvvcfuj13hpsfdclk62458q9i991tfn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAs6MpmU_aOe4kdz0yG7qimm1iN_SMiC9g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "210338696045-frvvcfuj13hpsfdclk62458q9i991tfn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
